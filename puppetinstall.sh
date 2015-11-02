@@ -101,3 +101,6 @@ apt-mark hold puppet puppet-common;
 
 #Run puppet once after install 
 puppet agent -t;
+
+#Make Puppet run every 30 min.
+puppet resource service puppet ensure=running enable=true
