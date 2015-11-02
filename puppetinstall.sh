@@ -93,8 +93,8 @@ __EOF__
 apt-key add /tmp/pubkey.gpg
 sleep 1
 #Install Puppet & Puppet-common.
-apt-get update && wait %1 && echo klar
-apt-get install puppet=$VERSION puppet-common=$VERSION;
+apt-get update && wait %1
+apt-get install -y puppet=$VERSION puppet-common=$VERSION;
 
 #Set hold on puppet and puppet-common.
 apt-mark hold puppet puppet-common;
