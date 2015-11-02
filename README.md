@@ -1,3 +1,5 @@
 # Install Puppet agent.
 
-Install Puppet repositorys and install a specific version of Puppet.
+Add Puppet repositorys and install a specific version of puppet agent and puppet-common automatically.
+
+Works on Ubuntu and Debian.
